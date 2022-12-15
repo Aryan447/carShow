@@ -1,0 +1,5 @@
+{% load static %}
+{% for image in images %}
+<h1>Static Images</h1>
+<img src="{% static 'images/{{ image }}' %}" alt="{{ image }}">
+{% endfor %}
